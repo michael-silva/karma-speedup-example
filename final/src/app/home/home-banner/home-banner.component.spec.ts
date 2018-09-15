@@ -1,15 +1,24 @@
 import { TestBed, async } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { HomeBannerComponent } from './home-banner.component';
-import { HomeModule } from '../home.module';
-import { SharedModule } from '../../shared/shared.module';
+import { BannerService } from '../../shared/services/banner.service';
+import { TestSuite } from '../../../test-suite';
 
 describe('HomeBannerComponent', () => {
+
+  TestSuite.configure();
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      declarations: [
+        HomeBannerComponent
+      ],
+      providers: [
+        BannerService,
+      ],
       imports: [
-        HomeModule, // This module has about 50 components.
-        SharedModule // This module has about 150 components.
+        HttpClientTestingModule
       ]
     }).compileComponents();
   }));

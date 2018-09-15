@@ -7,7 +7,7 @@ export class BannerService {
     constructor(private http: HttpClient) { }
 
     getAlbums() {
-        return this.http.get<any[]>(`https://jsonplaceholder.typicode.com/albums`);
+        return this.http.get<any[]>(`https://jsonplaceholder.typicode.com/photos`);
     }
 
 }
