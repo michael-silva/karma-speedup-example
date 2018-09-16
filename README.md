@@ -1,28 +1,10 @@
 # Karma Speedup Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+Esse é o código fonte completo do artigo [Aumentando a velocidade dos testes com Karma e Angular](https://medium.com/@michael.silva/aumentando-a-velocidade-dos-testes-com-karma-e-angular-72a665592b58).
+Aplicação construida em Angular com testes unitários usando Karma e Jasmine padrão do AngularCLI. Na raiz do projeto temos uma versão com problemas de performance para praticar os passos descritos no artigo, na pasta "final" está o resultado para comparar a performance e replicar esta alteração para seus próprios projetos.  
 
-## Development server
+## Executando os testes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute `npm run test` para rodar os testes do projeto raiz, uma suite de 100 testes levando cerca de 1 minuto.
+Execute `npm run test:final` para rodar os testes do projeto *final*, uma suite de 100 testes levando cerca de 1 segundo.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
